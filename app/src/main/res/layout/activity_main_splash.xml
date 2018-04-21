@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bagicode.www.navigationscreen.MainSplash">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/ic_logo"
+        android:src="@drawable/icon_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/ic_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="photonesia" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/keterangan"
+        android:text="Abadikan momen-momen pentingmu bersama keluarga, sahabat dan teman-teman menggunakan aplikasi photonesia"
+        android:layout_below="@id/ic_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="goAktivityLogin"
+        android:layout_marginLeft="16dp"
+        android:padding="10dp"
+        android:background="#fa4a4d"
+        android:layout_below="@id/keterangan"
+        android:text="Get Started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
